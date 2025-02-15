@@ -1,0 +1,261 @@
+/* General Styles */
+
+.dashboard {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+.main-content {
+  padding: 10px 20px;
+  transition: margin-left 0.3s ease-in-out;
+  margin-left: 80px;
+}
+/* Header Section */
+
+.search-bar {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.online-builder-btn {
+  background-color: #ff6b35;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.sign-in-btn {
+  background-color: transparent;
+  color: #333;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+.padding {
+  padding-top: 100px;
+}
+/* Dashboard Title */
+.dashboard-title {
+  font-size: 24px;
+  margin-top: 15px;
+  /* margin-top: 100px; */
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Flex Container for Dashboard Metrics and Reviews */
+.flex-container {
+  display: flex;
+  gap: 20px;
+}
+
+/* Metrics Section */
+.metrics {
+  flex: 2;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.metric-card {
+  padding: 20px;
+  border-radius: 12px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.metric-card.active-users {
+  background-color: #ff6b35;
+}
+
+.metric-card.click-events {
+  background-color: #333;
+}
+
+.metric-card.purchases {
+  background-color: #555;
+}
+
+.metric-card.likes {
+  background-color: #777;
+}
+
+.metric-value {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.metric-label {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.metric-change {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Reviews Section */
+.reviews {
+  flex: 1;
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.reviews-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.review-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.review-progress {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.progress-bar {
+  width: 70%;
+  background-color: #e0e0e0;
+  border-radius: 8px;
+  height: 10px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+}
+
+.positive .progress {
+  background-color: #4caf50;
+}
+
+.neutral .progress {
+  background-color: #ffeb3b;
+}
+
+.negative .progress {
+  background-color: #f44336;
+}
+
+.reviews-description {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.view-reviews-btn {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.leads-overview-container {
+  font-family: "Arial", sans-serif;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.leads-overview,
+.amount-closed {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.leads-overview h1,
+.amount-closed h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.leads-years,
+.chart-scale,
+.chart-years {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.leads-years span,
+.chart-scale span,
+.chart-years span {
+  color: #666;
+}
+
+.chart-info {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.chart-info span {
+  font-size: 18px;
+  color: #333;
+}
+
+.chart-info p {
+  color: #666;
+  margin: 5px 0 0;
+}
+
+.show-all-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 20px 0;
+}
+
+.show-all-button:hover {
+  background-color: #45a049;
+}
+
+.amount-closed ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.amount-closed ul li {
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+}
+
+.amount-closed ul li strong {
+  font-weight: bold;
+  color: #555;
+}

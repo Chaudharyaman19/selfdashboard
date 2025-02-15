@@ -1,0 +1,69 @@
+.vr-container {
+  font-family: "Arial", sans-serif;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.vr-container h1 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.vr-intro {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.vr-intro p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.vr-features {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.feature-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex: 1;
+}
+
+.feature-card h3 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  color: #666;
+}
+
+.vr-demo {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.vr-demo h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.demo-video {
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+}
