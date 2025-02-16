@@ -1,16 +1,14 @@
 import { useState } from "react";
 import "./dashboard.css";
 import { Link, Outlet } from "react-router-dom";
-
 function Dashboard() {
   const [show, setShow] = useState(false);
-
   return (
     <div className="dashboard-container">
       <div className={show ? "sidebar expanded" : "sidebar"}>
         <ul>
           <li>
-            <Link to="/header">
+            <Link to="/">
               <i
                 className="fa fa-bars"
                 onClick={() => setShow((prev) => !prev)}
@@ -32,7 +30,7 @@ function Dashboard() {
           </li>
           <li>
             <Link to="/billing">
-              <i className="fa fa-cube"></i> {/* Updated icon */}
+              <i className="fa fa-cube"></i>
               <span className="menu-text">Virtual Reality</span>
             </Link>
           </li>
@@ -68,9 +66,7 @@ function Dashboard() {
           </li>
         </ul>
       </div>
-      <div className="main-content">
-        <Outlet />
-      </div>
+      <div className="main-content">{<Outlet />}</div>
     </div>
   );
 }
